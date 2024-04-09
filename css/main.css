@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1127px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.w-1 {
+    width: 100%;
+    float: left;
+}
+
+.w-2 {
+    width: 50%;
+    float: left;
+}
+
+#logo {
+    margin: 10px 0 0 0;
+}
+
+.w-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.w-4 {
+    width: 25%;
+    float: left;
+}
+
+.w-5 {
+    width: 20%;
+    float: left;
+}
+
+.w-7 {
+    width: 14.28%;
+    float: left;
+}
+
+#search  {
+    border-bottom: 1px solid #324950;
+    display: inline-block;
+    max-width: 350px;
+    width: 100%;
+    margin: 10px 0 43px 0;
+}
+
+#search input {
+    font-size: 16px;
+    color: #324950;
+    background-color: transparent;
+    border: none;
+    height: 29px;
+    max-width: 327px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#search input::placeholder {
+    color: #324950;
+}
+
+#search button {
+    background: url("../images/search.png") no-repeat center;
+    font-size: 0;
+    height: 18px;
+    width: 18px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+
+#menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+ 
+}
+
+#menu ul li{
+    display: inline;
+    margin-left: 15px;
+}
+
+#menu ul li a {
+    font-size: 18px;
+    color: #324950;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+#menu ul li a:hover,
+#menu ul li a.active {
+    color: #57984C;
+}
+
+.footer {
+    background-color: #2D3F45;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.footer-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-menu ul li {
+    display: inline;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+.footer-menu ul li a {
+    font-size: 16px;
+    color: #ffffff;
+    
+    text-decoration: none;
+    transition: color .3s;
+    margin-right: 20px;
+}
+
+.footer-menu ul li a:hover
+.footer-menu ul li a.active {
+    color: #57984C;
+}
+
+.footer-ikon a {
+    margin-left: 10px;
+}
+
+.footer-ikon {
+    margin-right: 30px;
+}
+
+.footer-end {
+    background-color: #40575f;
+    padding: 15px 0 10px 0;
+}
+
+.end {
+    color: #B9B9B9;
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.flex {
+    display: flex;
+    align-items: flex-end;
+}
+
