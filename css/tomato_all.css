@@ -109,7 +109,11 @@ h1 {
     text-align: center;
     margin: 12px 24px 12px 0;
     background-color: #fff;
-    cursor: pointer;
+    
+}
+
+.tomato-block a {
+    text-decoration: none;
 }
 
 .tomato-photo {
