@@ -1,0 +1,160 @@
+@import url("main.css");
+
+
+.content {
+    background-color: #f9f9f9;
+    padding: 20px 0 120px 0;
+    background-image: url(../images/tomato_one.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -60px;
+    background-size: 80%;
+    box-shadow: inset 0px 2px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.content h1{
+    font-size: 54px;
+    max-width: 500px;
+    margin: 30px 0 35px 0;
+    line-height: 1.3;
+}
+.content h1 span{
+    color: #57984C;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+
+}
+
+.link a {
+    display: flex;
+    align-items: baseline;
+    text-decoration: none;
+}
+
+.link-text {
+    font-size: 14px;
+    color: #57984C;
+    text-decoration: none;
+    margin-left: 17px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.delimetr {
+    font-size: 17px;
+    color: #57984C;
+    margin-bottom: 30px;
+}
+
+.red-block {
+    display: flex;
+    max-width: 435px;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.red-text {
+    color: #CF2333;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.info-block {
+    margin-bottom: 15px;
+}
+.title {
+    font-size: 20px;
+    color: #57984C;
+    font-weight: bold;
+}
+.line {
+    height: 1px;
+    width: 185px;
+    background-color: #57984C;
+    margin: 10px 0 21px 0;
+}
+
+.info-block ul  {
+    padding: 0;
+    margin-top: 5px;
+}
+
+.info-block ul li {
+    list-style-type: none;
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+
+.info-characteristics {
+    margin-bottom: 15px;
+}
+
+.info-characteristics ul {
+    padding: 0;
+    margin-left: 15px;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+.info-characteristics ul li{
+    padding-left: 5px;
+}
+
+.info-characteristics li::marker {
+    color: #57984C;
+    
+}
+
+.right-img {
+    margin-top: 15px;
+    display: flex;
+    justify-content: right;
+}
+
+.right-photo {
+    width: 95%;
+}
+
+.PDF {
+    display: flex;
+    justify-content: end;
+    margin: 25px 0 40px 0;
+}
+
+.PDF a {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    background-image: url(../images/pdf.png);
+    background-repeat: no-repeat;
+    background-position: 30px 10px;
+    width: 155px;
+    height: 51px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px 0px;
+    color: #57984C;
+    font-size: 17px;
+    font-weight: bold;
+    border: 2px solid #57984C;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 70px;
+}

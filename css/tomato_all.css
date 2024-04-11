@@ -1,9 +1,5 @@
 @import url("main.css");
 
-header {
-    height: 135px;
-}
-
 #slider {
     max-height: 475px;
 }
