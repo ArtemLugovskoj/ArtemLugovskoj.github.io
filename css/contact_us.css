@@ -26,13 +26,13 @@ h1 {
 .delimetr {
     color: #57984C;
     font-size: 17px;
-    margin: 30px 0;
+    margin: 30px 0 35px 0;
 }
 
 .forma {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding-bottom: 20px;
 }
 .left-forma {
     display: flex;
@@ -44,13 +44,13 @@ h1 {
 }
 
 .block input {
-    height: 55px;
+    height: 50px;
     max-width: 350px;
     width: 100%;
     margin: 0;
     padding: 0;
     border: solid 1px #DADADA;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 17px;
 }
 
@@ -66,14 +66,19 @@ h1 {
 }
 
 .right-forma select{
-    height: 55px;
+    height: 50px;
     max-width: 635px;
     width: 100%;
     margin: 0;
     padding: 0;
     border: solid 1px #DADADA;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 17px;
+
+    appearance: none;
+    background: url("../images/Frame.png") no-repeat right;
+    background-position-x: calc(100% - 15px);
+    background-color: #fff;
 }
 
 .right-block {
@@ -81,19 +86,19 @@ h1 {
 }
 
 .right-block input {
-    height: 55px;
+    height: 50px;
     max-width: 635px;
     width: 100%;
     margin: 0;
     padding: 0;
     border: solid 1px #DADADA;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 17px;
 }
 
 .right-forma textarea{
     resize: none;
-    height: 362px;
+    height: 342px;
     max-width: 635px;
     width: 100%;
     border: solid 1px #DADADA;
@@ -107,11 +112,12 @@ h1 {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    justify-content: space-between;
 }
 
 .captcha input {
-    height: 55px;
-    max-width: 300px;
+    height: 50px;
+    max-width: 225px;
     width: 100%;
     border: solid 1px #DADADA;
     border-radius: 10px;
@@ -121,7 +127,7 @@ h1 {
 
 .captcha button {
     margin-left: 20px;
-    height: 55px;
+    height: 50px;
     max-width: 230px;
     width: 100%;
     font-size: 17px;
@@ -137,7 +143,7 @@ h1 {
 }
 
 .end-adress {
-    margin: 30px 0;
+    margin: 40px 0;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
