@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
     <link rel="stylesheet" href="../css/contact_us.css">
+    <meta name="viewport" content="width=320, initial-scale=1.0" />
 </head>
 
 <body>
@@ -22,16 +23,20 @@
                             <button>Submit</button>
                         </div>
                     </div>
-                    <div id="menu">
-                        <ul>
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="#">Company Profile</a></li>
-                            <li><a href="tomato_all.html">Products</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">R & D</a></li>
-                            <li><a class="active" href="#">Contact</a></li>
+                    <div id="menu" class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                        </label>
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="../index.html">Home</a></li>
+                            <li><a class="menu__item" href="#">Company Profile</a></li>
+                            <li><a class="menu__item" href="tomato_all.html">Products</a></li>
+                            <li><a class="menu__item" href="#">Services</a></li>
+                            <li><a class="menu__item" href="#">R & D</a></li>
+                            <li><a class="menu__item active" href="#">Contact</a></li>
                         </ul>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </div>
@@ -39,7 +44,7 @@
     <div id="slider">
         <img src="../images/contact.jpg" alt="">
     </div>
-    <div class="content">
+    <div class="content-us">
         <div class="wrapper">
             <h1>Contact us</h1>
 

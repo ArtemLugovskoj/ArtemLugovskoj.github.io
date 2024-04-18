@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
     <link rel="stylesheet" href="css/home.css">
+    <meta name="viewport" content="width=320, initial-scale=1.0" />
 </head>
 
 <body>
@@ -22,16 +23,20 @@
                             <button>Submit</button>
                         </div>
                     </div>
-                    <div id="menu">
-                        <ul>
-                            <li><a class="active" href="#">Home</a></li>
-                            <li><a href="#">Company Profile</a></li>
-                            <li><a href="pages/tomato_all.html">Products</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">R & D</a></li>
-                            <li><a href="pages/contact_us.html">Contact</a></li>
+                    <div id="menu" class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                        </label>
+                        <ul class="menu__box">
+                            <li><a class="active menu__item" href="#">Home</a></li>
+                            <li><a class="menu__item" href="#">Company Profile</a></li>
+                            <li><a class="menu__item" href="pages/tomato_all.html">Products</a></li>
+                            <li><a class="menu__item" href="#">Services</a></li>
+                            <li><a class="menu__item" href="#">R & D</a></li>
+                            <li><a class="menu__item" href="pages/contact_us.html">Contact</a></li>
                         </ul>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </div>
@@ -101,15 +106,16 @@
                 </div>
 
                 <div class="info-block block2">
+                    <div class="img-block">
+                        <img src="images/mission.png" alt="">
+                        <img src="images/btn_play.png" class="play" alt="">
+                    </div>
                     <div class="text-block text2">
                         <div class="title">Mission</div>
                         <div class="delimiter">*****</div>
                         <div class="sub-title">Breeding and marketing seeds for advanced field crops and vegetable varieties that provide an added value to all supply chain partners.</div>
                     </div>
-                    <div class="img-block">
-                        <img src="images/mission.png" alt="">
-                        <img src="images/btn_play.png" class="play" alt="">
-                    </div>
+                    
                 </div>
 
             </div>
@@ -122,7 +128,7 @@
             <div class="all-activities wrapper ">
                 <div class="block-activity">
                     <div class="activity-photo">
-                        <img src="images/activity0.png" alt="">
+                        <img class="act" src="images/activity0.png" alt="">
                     </div>
                     <div class="activity-transform">
                     <div class="activity-title">
@@ -139,7 +145,7 @@
         
                 <div class="block-activity">
                     <div class="activity-photo img-tomato">
-                        <img src="images/activity1.png" alt="">
+                        <img class="act" src="images/activity1.png" alt="">
                     </div>
                     <div class="activity-transform">
                     <div class="activity-title">
@@ -156,7 +162,7 @@
         
                 <div class="block-activity">
                     <div class="activity-photo">
-                        <img src="images/activity2.png" alt="">
+                        <img class="act" src="images/activity2.png" alt="">
                     </div>
                     <div class="activity-transform">
                     <div class="activity-title">
