@@ -143,11 +143,10 @@
 .PDF a {
     display: flex;
     align-items: center;
-    background-color: #fff;
     
-    background-repeat: no-repeat;
-    background-position: 30px 10px;
-    width: 155px;
+    justify-content: center;
+    
+    width: 180px;
     height: 51px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px 0px;
     color: #57984C;
@@ -157,5 +156,5 @@
     border-radius: 30px;
     text-decoration: none;
     text-align: center;
-    padding-left: 70px;
+    
 }

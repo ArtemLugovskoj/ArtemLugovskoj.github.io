@@ -169,7 +169,7 @@
         
     }
     .content-us {
-        padding: 20px;
+        padding: 0 15px;
     }
     .forma .right-forma textarea {
         height: 358px;
@@ -221,7 +221,7 @@
     }
     .container {
         flex-direction: column;
-        padding: 20px;
+        padding: 0 15px;
     }
     .container .left-container {
         text-align: center;
