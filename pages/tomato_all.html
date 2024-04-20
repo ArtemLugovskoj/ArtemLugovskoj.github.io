@@ -43,11 +43,11 @@
     </header>
 
     <div id="slider">
-        <img src="../images/tomatoall.jpg" alt="">
+        <img src="../img/slider.png" alt="">
     </div>
     <div class="content">
         <div class="wrapper">
-            <h1>Agridera Fresh Market Tomato Hybrids</h1>
+            <h1>Lots and lots of kiwi (10й варіант)</h1>
 
             <div class="delimetr">*****</div>
 
@@ -99,112 +99,24 @@
             <div class="left-border">
                 <b>Agridera operates through international and local distributers around the world. </b>
             </div>
-            <div class="tomato-container">
-                <div class="tomato-block">
-                    <a href="tomato_one.html">
-                        <div class="tomato-photo">
-                            <img src="../images/cooltomato.png" alt="">
+            
+                <div id="products" class="tomato-container">
+                    <div class="product" v-for="item in products">
+                        <div class="tomato-block">
+                            <a :href="'tomato_one.html#'+item.id" >
+                                <div class="tomato-photo">
+                                    <img :src=item.image alt="">
+                                </div>
+                                <div class="tomato-title">
+                                    {{item.title}}
+                                </div>
+                            </a>
+                            <div class="tomato-sub-title">
+                                {{item.short_text}}
+                            </div>
                         </div>
-                        <div class="tomato-title">
-                            TAG 1000 (TAG 853)
-                        </div>
-                    </a>
-                    <div class="tomato-sub-title">
-                        Tomato Determinate Red Standard Round
                     </div>
                 </div>
-                <div class="tomato-block">
-                    <a href="tomato_one.html">
-                        <div class="tomato-photo">
-                            <img src="../images/cooltomato.png" alt="">
-                        </div>
-                        <div class="tomato-title">
-                            TAG 1001 (TAG 855)
-                        </div>
-                    </a>
-                    <div class="tomato-sub-title">
-                        Tomato Determinate Red Standard Round
-                    </div>
-                </div>
-                <div class="tomato-block">
-                    <a href="tomato_one.html">
-                        <div class="tomato-photo">
-                            <img src="../images/cooltomato.png" alt="">
-                        </div>
-                        <div class="tomato-title">
-                            TAG 1002 (TAG 809)
-                        </div>
-                    </a>
-                    <div class="tomato-sub-title">
-                        Tomato Determinate Red Standard Round
-                    </div>
-                </div>
-                <div class="tomato-block">
-                    <a href="tomato_one.html">
-                        <div class="tomato-photo">
-                            <img src="../images/cooltomato.png" alt="">
-                        </div>
-                        <div class="tomato-title">
-                            TAG 1003 (TAG 834)
-                        </div>
-                    </a>
-                    <div class="tomato-sub-title">
-                        Tomato Determinate Red Standard Round
-                    </div>
-                </div>
-                <div class="tomato-block">
-                    <a href="tomato_one.html">
-                        <div class="tomato-photo">
-                            <img src="../images/cooltomato.png" alt="">
-                        </div>
-                        <div class="tomato-title">
-                            TAG 1004 (TAG 848)
-                        </div>
-                    </a>
-                    <div class="tomato-sub-title">
-                        Tomato Determinate Red Standard Round
-                    </div>
-                </div>
-                <div class="tomato-block">
-                    <a href="tomato_one.html">
-                        <div class="tomato-photo">
-                            <img src="../images/cooltomato.png" alt="">
-                        </div>
-                        <div class="tomato-title">
-                            TAG 1005 (TAG 800)
-                        </div>
-                    </a>
-                    <div class="tomato-sub-title">
-                        Tomato Determinate Red Standard Round
-                    </div>
-                </div>
-                <div class="tomato-block">
-                    <a href="tomato_one.html">
-                        <div class="tomato-photo">
-                            <img src="../images/cooltomato.png" alt="">
-                        </div>
-                        <div class="tomato-title">
-                            TAG 1006 (TAG 898)
-                        </div>
-                    </a>
-                    <div class="tomato-sub-title">
-                        Tomato Determinate Red Standard Round
-                    </div>
-                </div>
-                <div class="tomato-block">
-                    <a href="tomato_one.html">
-                        <div class="tomato-photo">
-                            <img src="../images/cooltomato.png" alt="">
-                        </div>
-                        <div class="tomato-title">
-                            TAG 1007 (TAG 816)
-                        </div>
-                    </a>
-                    <div class="tomato-sub-title">
-                        Tomato Determinate Red Standard Round
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <div class="footer">
@@ -236,5 +148,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

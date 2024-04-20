@@ -20,6 +20,7 @@
 }
 .content h1 span{
     color: #57984C;
+    display: block;
 }
 
 .link {
@@ -143,7 +144,7 @@
     display: flex;
     align-items: center;
     background-color: #fff;
-    background-image: url(../images/pdf.png);
+    
     background-repeat: no-repeat;
     background-position: 30px 10px;
     width: 155px;

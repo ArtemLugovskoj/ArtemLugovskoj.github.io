@@ -50,11 +50,10 @@
                 </a>
             </div>
             
-            <div class="container">
+            <div id="products" class="container">
                 <div class="left-container">
-                    <h1>TAG 1002 (TAG 809)
-                        <span>Tomato Determinate
-                            Red Standard Round</span> 
+                    <h1>{{product.title}}
+                        <span>{{product.short_text}}</span> 
                     </h1>
                     <div class="delimetr">
                         *****
@@ -94,10 +93,12 @@
                 </div>
                 <div class="right-container">
                     <div class="right-img">
-                        <img class="right-photo" src="../images/right-img.jpg" alt="">
+                        
+                        <img class="right-photo" :src=product.image alt="">
                     </div>
                     <div class="PDF">
-                        <a href="#">Download pdf</a>
+                        <a class="pdf" href="#" @click.prevent="addToCart (product.id)" v-if="!btnVisible">Add to cart</a>
+                        <a class="pdf" href="tomato_one.html" v-if="btnVisible">Go to cart</a>
                     </div>
                     <div class="info-characteristics">
                         <div class="title">Cycle</div>
@@ -148,5 +149,8 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

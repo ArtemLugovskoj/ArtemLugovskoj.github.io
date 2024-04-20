@@ -7,6 +7,7 @@
 
 #slider img{
     width: 100%;
+    
 }
 
 h1 {
@@ -15,7 +16,7 @@ h1 {
 }
 
 .content {
-    background-color: #FCF0F0;
+    background-color: #ddffd6;
     padding: 20px;
 }
 
@@ -60,7 +61,7 @@ h1 {
 }
 
 .info {
-    background-color: #FFFAFA;
+    background-color: #c1f7d1;
     padding: 40px 0;
     display: flex;
     margin: 30px 0;
