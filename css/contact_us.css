@@ -15,7 +15,7 @@ h1 {
 }
 
 .content-us {
-    background-color: #f9f9f9;
+    background-color: #e8ffe2;
 }
 
 .content-us h1{
@@ -177,4 +177,72 @@ h1 {
     color: #57984C;
     font-size: 17px;
     margin-left: 2px;
+}
+
+
+/* PR7  */
+
+.cart {
+    position: relative;
+    background-color: #fff;
+    height: 70px;
+    
+    
+    margin: 0;
+    padding: 10px;
+    border: solid 1px #DADADA;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.cart-img {
+    max-width: 80px;
+    margin-top: 5px;
+}
+
+.cart-img img {
+    max-width: 100%;
+}
+
+.cart-right {
+    margin-left: 20px;
+}
+
+.cart-end {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.cart-title {
+    color: #324950;
+    font-size: 19px;
+    font-weight: bold;
+}
+.cart-sub-title {
+    color: #57984C;
+    padding: 5px 0;
+}
+
+.end-end {
+    font-size: 40px;
+    font-weight: 800;
+    color: green;
+}
+
+.end-end span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.forma p {
+    margin: 10px 0;
+    font-size: 18px;
 }
