@@ -43,14 +43,15 @@ export const login = {
                 <img :src="parent.url + '/app/views/images/Cover_' + img + '.jpg'" /> 
             </div> 
             <div id="right-area" class="w40"> 
-                <div class="header"> 
+                <div class="headers"> 
                     <div class="wrappers flex"> 
-                    <div class="w60 al"> 
+                    <div class="w60 al1"> 
                             <h1>Affiliate Sign in</h1> 
                         </div> 
                         <div class="w40 logo"> 
                             <img :src="parent.url + '/app/views/images/logo.svg'" /> 
                         </div> 
+                        
                     </div> 
                 </div>
                 <div class="forms inner-form p20"> 
@@ -74,6 +75,7 @@ export const login = {
                     </form> 
                 </div> 
             </div> 
+            
         </div>
     `,
 };
