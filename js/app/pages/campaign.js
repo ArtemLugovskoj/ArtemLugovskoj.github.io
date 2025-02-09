@@ -196,7 +196,6 @@ export const campaign = {
                 let dates = [];
                 let clicks = [];
                 let views = [];
-                let leads = [];
 
                 if (item && item["line"]) {
                     for (let i in item["line"]) {
@@ -350,8 +349,8 @@ export const campaign = {
                         </div>
 
                         <div class="itemchart ptb10"
-                             v-if="data.items[iChart].sites"
-                             v-for="s in data.items[iChart].sites">
+                            v-if="data.items[iChart].sites"
+                            v-for="s in data.items[iChart].sites">
                             <toogle v-model="s.include"
                                 @update:modelValue="
                                     val => {
@@ -423,8 +422,9 @@ export const campaign = {
                 </div>
                 <div class="rows">
                   <label class="custom-label">Type</label>
+                  <i class="select-icon fas fa-chevron-down"></i>
                   <select v-model="parent.formData.type" required>
-                    <option value="0"></option>
+                    <option value="0">---</option>
                     <option 
                       v-if="data.types" 
                       v-for="c in data.types" 
