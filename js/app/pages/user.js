@@ -337,10 +337,10 @@ export const user = {
   <div class="inside-content">
     <Header ref="header" />
     <div id='spinner' v-if="loader"></div>
-  
+
     <div class="panelTop">
       <div class="wrapper">
-        <div class="flexs">
+        <div class="flexes">
           <div class="w30 ptb15 pbe">
             <h1 class="sz" v-if="data && data.info">{{ data.info.user }}</h1>
           </div>
@@ -351,7 +351,7 @@ export const user = {
             </a>
           </div>
         </div>
-  
+
         <div class="flexs" v-if="data && data.info">
           <div class="w50">
             <p><b>Phone:</b> {{ data.info.phone }}</p>
@@ -360,7 +360,7 @@ export const user = {
             <p><b>Email:</b> {{ data.info.email }}</p>
           </div>
         </div>
-  
+
         <div class="tabs ar">
           <ul>
             <li v-if="tabs"
@@ -371,7 +371,7 @@ export const user = {
         </div>
       </div>
     </div>
-  
+
     <div class="wrapper">
       <popup ref="new" :title="(parent.formData && parent.formData.id) ? 'Edit user' : 'New user'">
         <div class="form inner-form">
@@ -399,7 +399,7 @@ export const user = {
           </form>
         </div>
       </popup>
-  
+
       <div v-if="tab == 1">
         <div class="flex panel">
           <div class="w20 ptb10">
@@ -412,13 +412,13 @@ export const user = {
           </div>
           <div class="w20 ptb15 al"></div>
         </div>
-  
+
       <popup ref="chart" fullscreen="true" title="Chart"> 
           <div class="flex panels">
             <div class="w30 ptb25">
-              <input type="date" v-model="date" @change="get();" />
+              <input class="data"  type="date" v-model="date" @change="get();" />
               <span style="font-size: 17px; font-weight: bold;"> - </span>
-              <input type="date" v-model="date2" @change="get()" />
+              <input class="data"  type="date" v-model="date2" @change="get()" />
             </div>
             <div class="w70 a1">
               <div class="flex cubes">
@@ -428,11 +428,11 @@ export const user = {
                 </div>
                 <div class="w30 views">
                   <div>Views</div>
-                 {{data.sites [iChart].views}} 
+                {{data.sites [iChart].views}} 
                 </div>
                 <div class="w30 leads">
                   <div>Leads</div>
-                 {{data.sites[iChart].leads}} 
+                {{data.sites[iChart].leads}} 
                 </div>
                 <div class="w30 ctr">
                   <div>CTR</div>
@@ -441,9 +441,8 @@ export const user = {
               </div>
             </div>
           </div>
-  
-          <div class="flex body">
-            <div class="w30 ar filchart"></div>
+
+          <div class="flex bodys">
             <div class="w70" id="chartOuter">
               <div id="chartHints">
                 <div class="chartHintsViews">Views</div>
@@ -453,7 +452,7 @@ export const user = {
             </div>
           </div>
         </popup>
-  
+
         <div class="table" v-if="data.sites != ''">
         <div class="t-t">
           <table>
@@ -499,11 +498,11 @@ export const user = {
                 <td class="action">
                   <a
                     href="#"
-                   @click.prevent="
-                                     parent.formData = item;
-                                     iChart = i;
-                                     $refs.chart.active=1;
-                                     line(item)"
+                  @click.prevent="
+                                    parent.formData = item;
+                                    iChart = i;
+                                    $refs.chart.active=1;
+                                    line(item)"
                   >
                     <i class="fas fa-chart-bar"></i>
                   </a>
@@ -517,7 +516,7 @@ export const user = {
           No items
         </div>
       </div>
-  
+
       <div v-if="tab == 2">
         <div class="flex panel">
           <div class="w30 ptbs10">
@@ -530,7 +529,7 @@ export const user = {
             </a>
           </div>
         </div>
-  
+
         <popup ref="payment" :title="(parent.formData && parent.formData.id) ? 'Edit payment' : 'New payment'">
           <div class="form inner-form">
             <form @submit.prevent="actionPayment()" v-if="parent.formData">
@@ -554,7 +553,7 @@ export const user = {
             </form>
           </div>
         </popup>
-  
+
         <div class="table" v-if="data.payments != ''">
         <div class="t-s">
           <table>
@@ -580,7 +579,7 @@ export const user = {
                     {{ item.date_title }}
                   </a>
                 </td>
-                 <td class="txt">
+                <td class="txt">
                   {{ item.description }}
                 </td>
                 <td class="actions">
@@ -600,7 +599,7 @@ export const user = {
           No items
         </div>
       </div>
-  
+
       <div v-if="tab == 0">
         <div class="flex panel">
           <div class="w20 ptb10">
@@ -613,13 +612,13 @@ export const user = {
           </div>
           <div class="w20 ptb15 al"></div>
         </div>
-  
+
         <popup ref="img" title="Banner">
           <div class="ac">
             <img :src="parent.url + '/' + parent.formData.img" v-if="parent.formData.img" />
           </div>
         </popup>
-  
+
         <div class="table" v-if="data.statistics != ''">
         <div class="t-s">
           <table>
@@ -680,5 +679,5 @@ export const user = {
       </div>
     </div>
   </div>
-  `,
+`,
 };
